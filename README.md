@@ -4,7 +4,7 @@ Works with Lua >= 5.1 and LuaJIT 2.0.
 
 ## ✨ Characteristics
 - Multiple inheritance (with support for shared inheritance)
-- Suppport for ''super'' & ''static''
+- Suppport for `super` & `static`
 - Automatic method override: methods in the child class override those in the base class.
 - Automatic ambiguity resolution: if two bases have the same method, they are ignored (unresolved ambiguity)
 - Shared attributes
@@ -12,22 +12,22 @@ Works with Lua >= 5.1 and LuaJIT 2.0.
 - Dynamic mixins (`include`)
 
 ## 🚀 Installation
-Copy the '''superclass.lua''' file in your project and include it with '''require ' ''path.to.file'''''.
+Copy the `superclass.lua` file in your project and include it with `require 'path.to.file'`.
 
-You can clone the repo with ```git clone https://github.com/leomil72/superclass.git```.
+You can clone the repo with `git clone https://github.com/leomil72/superclass.git`.
 
 
 ## 📚 API
-```Class.create(...)```
+`Class.create(...)`
 Create a new class. It can accept multiple superclasses.
 
-```Class.shared(base)```
+`Class.shared(base)`
 Indicates that a superclass is shared (virtual inheritance).
 
-```obj:isInstanceOf(class)```
+`obj:isInstanceOf(class)`
 Checks whether an object is an instance of a class or superclasses.
 
-```obj:include(mixin)```
+`obj:include(mixin)`
 Dynamically adds methods from a mixin.
 
 ## 🧪 Example of use
@@ -48,7 +48,7 @@ local myDog = Dog("Fido")
 print(myDog:isInstanceOf(Dog))     --> true
 print(myDog:isInstanceOf(Animal))  --> true
 ```
-See ''main.lua'' for a more complete example.
+See `main.lua` for a more complete example.
 
 ### 🎮 Use with LÖVE2D
 ```lua
